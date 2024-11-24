@@ -18,9 +18,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/picture" element={<Picture />} />
-          <Route path="/Slide" element={<Slide />} />
+          <Route path="/home" element={<Home/>} />
+          <Route path="/picture" element={<Picture/>} />
+          <Route path="/Slide" element={<Slide/>} />
         </Routes>
       </Router>
     );
@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div>
-      <Login signIn={signIn} />
+      <Login signIn={signIn}/>
     </div>
   );
 }
