@@ -1,9 +1,11 @@
 import React from "react";
 
+import { IoLogoGoogle } from "react-icons/io";
+
 const Login = () => {
   return (
-    <div className="relative flex flex-col justify-center min-h-screen overflow-hidden   ">
-      <div className="w-full p-6 m-auto bg-blue rounded-md shadow-md lg:max-w-xl">
+    <div className=" flex items-center justify-center h-screen">
+      <div className="w-96 p-6 bg-white shadow-lg rounded-md">
         <h1 className="text-3xl font-semibold text-center text-purple-700 underline">
           Login
         </h1>
@@ -38,6 +40,10 @@ const Login = () => {
             </div>
           </div>
         </form>
+        <div className="w-full text-center">
+          <IoLogoGoogle />
+        </div>
+
         <p className="mt-8 text-xs font-light text-center text-gray-700">
           {" "}
           Don't have an account?{" "}
