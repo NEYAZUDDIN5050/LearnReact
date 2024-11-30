@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Picture from "./pages/Picture";
 import Slide from "./pages/Slide";
 import Navbar from "./Components/Navbar";
+import Signup from "./pages/Signup";
 
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -18,9 +19,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/home" element={<Home/>} />
-          <Route path="/picture" element={<Picture/>} />
-          <Route path="/Slide" element={<Slide/>} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/picture" element={<Picture />} />
+          <Route path="/Slide" element={<Slide />} />
         </Routes>
       </Router>
     );
@@ -28,7 +29,8 @@ function App() {
 
   return (
     <div>
-      <Login signIn={signIn}/>
+      {/*<Login signIn={signIn}/>*/}
+      <Signup signIn={signIn} />
     </div>
   );
 }
