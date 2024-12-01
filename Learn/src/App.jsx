@@ -8,6 +8,7 @@ import Signup from "./pages/Signup";
 
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./Components/Header";
 
 function App() {
   const [auth, setAuth] = useState(false);
@@ -30,7 +31,9 @@ function App() {
   return (
     <div>
       {/*<Login signIn={signIn}/>*/}
-      <Signup signIn={signIn} />
+      {/*<Signup signIn={signIn} />*/}
+      <Header signIn={signIn} />
+      <Header signIn={signIn} />
     </div>
   );
 }
